@@ -1,0 +1,2 @@
+class PokeTeamsController < ApplicationController
+end
