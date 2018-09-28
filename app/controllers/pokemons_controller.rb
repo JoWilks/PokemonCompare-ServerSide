@@ -5,25 +5,37 @@ class PokemonsController < ApplicationController
         render json: @pokemons      
     end
 
-    def show
-    end
-
-    def new
-    end
 
     def create
-        #Pokemon.get_pokemon(name of pokemon type from front end)
-        #Pokemon.new(inputs from front end)
-
+        pokeData = Pokemon.get_pokemon(params["name"])
+        @pokemon = Pokemon.new(pokemon_params)
+        @pokemon.averagepokemonstats = JSON.stringify(pokeData)
+        if @pokemon.save
+            render json: @pokemon, status: :accepted
+        else 
+            render json: {errors: @pokemon.errors.full_messages}, status: :unprocessible_entity
+        end
     end
 
-    def edit
-    end
 
     def update
+        @pokemon = Pokemon.find(params["id"])
+        @pokemon.update(pokemon_params)
+        if @pokemon.save
+            render json: @pokemon, status: :accepted
+        else 
+            render json: {errors: @pokemon.errors.full_messages}, status: :unprocessible_entity
+        end
     end
 
     def delete
+        @pokemon = Pokemon.find(params[:id])
+        @pokemon.destroy
+        if @pokemon
+            render json: {status: "deleted"}
+        else
+            render json: {errors: @pokemon.errors.full_messages}, status: :unprocessible_entity
+        end
     end
 
     def search
@@ -31,4 +43,12 @@ class PokemonsController < ApplicationController
         @searchedPokemon = Pokemon.get_pokemon(@input)
         render json: @searchedPokemon
     end
+
+    private
+
+  def pokemon_params
+    params.permit(:nickname, :name, :nature, :level, :attack, :special_attack, :defence, :special_defence, :speed, :hp, :user_id)
+  end
+
+
 end
