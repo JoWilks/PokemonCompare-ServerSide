@@ -4,7 +4,13 @@ class CreatePokemons < ActiveRecord::Migration[5.2]
       t.string :nickname
       t.string :name
       t.string :nature
-      t.string :stats
+      t.integer :level
+      t.integer :attack
+      t.integer :special_attack
+      t.integer :defence
+      t.integer :special_defence
+      t.integer :speed
+      t.integer :hp
       t.string :averagepokemonstats
       t.integer :user_id
 

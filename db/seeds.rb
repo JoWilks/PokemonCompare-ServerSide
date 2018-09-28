@@ -10,8 +10,8 @@ jo = User.create(name: "jo")
 
 blah = PokeTeam.create(name:"blah", user_id: 1)
 
-ratty = Pokemon.create(user_id: 1, nickname: "ratty", name:"rattata")
-pididgey = Pokemon.create(user_id: 1, nickname: "pididgey", name:"pidgey")
+ratty = Pokemon.create(user_id: 1, nickname: "ratty", name:"rattata", nature:"greedy", attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10)
+pididgey = Pokemon.create(user_id: 1, nickname: "pididgey", name:"pidgey", nature:"fiery", attack: 8, special_attack: 11, defence: 9, special_defence: 8, speed: 12, hp: 9)
 
 blah.pokemons << ratty
 blah.pokemons << pididgey
