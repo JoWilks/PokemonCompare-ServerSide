@@ -2452,3 +2452,409 @@ NoMethodError (undefined method `stringify' for JSON:Module
 Did you mean?  String):
   
 app/controllers/pokemons_controller.rb:12:in `create'
+Started GET "/" for 127.0.0.1 at 2018-09-29 20:33:07 +0100
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-09-29 20:33:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-29 20:33:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/pokemons"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-29 20:34:02 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (31.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 8, nickname: "foxy", name: "vulpix", nature: "adamant", level: 10, attack: nil, special_attack: nil, defence: nil, special_defence: nil, speed: nil, hp: nil, averagepokemonstats: "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"drought\", \"ur...", user_id: 1, created_at: "2018-09-28 15:59:09", updated_at: "2018-09-28 15:59:09">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (14.26ms)
+Completed 200 OK in 130ms (Views: 55.7ms | ActiveRecord: 50.4ms)
+
+
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/pokemons/8" for 127.0.0.1 at 2018-09-29 20:57:47 +0100
+Processing by PokemonsController#delete as */*
+  Parameters: {"id"=>"8"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:15: syntax error, unexpected '|'
+        data.each{ (|key, value|
+                     ^
+/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:15: syntax error, unexpected '|', expecting '='
+/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:19: syntax error, unexpected '}', expecting ')'):
+  
+app/models/pokemon.rb:15: syntax error, unexpected '|'
+app/models/pokemon.rb:15: syntax error, unexpected '|', expecting '='
+app/models/pokemon.rb:19: syntax error, unexpected '}', expecting ')'
+app/controllers/pokemons_controller.rb:32:in `delete'
+  [1m[36mPokemon Load (2.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/pokemons/8" for 127.0.0.1 at 2018-09-29 21:00:14 +0100
+Processing by PokemonsController#delete as */*
+  Parameters: {"id"=>"8"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:15: syntax error, unexpected '|'
+        data.each{ (|key, value|
+                     ^
+/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:15: syntax error, unexpected '|', expecting '='
+/Users/flatiron/Labs/PokemonCompare-ServerSide/app/models/pokemon.rb:19: syntax error, unexpected '}', expecting ')'):
+  
+app/models/pokemon.rb:15: syntax error, unexpected '|'
+app/models/pokemon.rb:15: syntax error, unexpected '|', expecting '='
+app/models/pokemon.rb:19: syntax error, unexpected '}', expecting ')'
+app/controllers/pokemons_controller.rb:32:in `delete'
+Started DELETE "/pokemons/8" for 127.0.0.1 at 2018-09-29 21:00:33 +0100
+Processing by PokemonsController#delete as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mPokemon Load (4.8ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[36mPokemon::HABTM_PokeTeams Destroy (27.0ms)[0m  [1m[31mDELETE FROM "poke_teams_pokemons" WHERE "poke_teams_pokemons"."pokemon_id" = $1[0m  [["pokemon_id", 8]]
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[36mPokemon Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:33
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 128ms (Views: 12.6ms | ActiveRecord: 47.1ms)
+
+
+Started POST "/pokemons/new" for 127.0.0.1 at 2018-09-29 21:01:57 +0100
+Processing by PokemonsController#create as */*
+  Parameters: {"nickname"=>"Jiggly", "name"=>"jigglypuff", "nature"=>"angry", "level"=>"15", "user_id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mUser Load (15.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mPokemon Create (5.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nickname", "Jiggly"], ["name", "jigglypuff"], ["nature", "angry"], ["level", 15], ["averagepokemonstats", "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"friend-guard\", \"url\"=>\"https://pokeapi.co/api/v2/ability/132/\"}, \"is_hidden\"=>true, \"slot\"=>3}, {\"ability\"=>{\"name\"=>\"competitive\", \"url\"=>\"https://pokeapi.co/api/v2/ability/172/\"}, \"is_hidden\"=>false, \"slot\"=>2}, {\"ability\"=>{\"name\"=>\"cute-charm\", \"url\"=>\"https://pokeapi.co/api/v2/ability/56/\"}, \"is_hidden\"=>false, \"slot\"=>1}], \"base_experience\"=>95, \"id\"=>39, \"name\"=>\"jigglypuff\", \"species\"=>{\"name\"=>\"jigglypuff\", \"url\"=>\"https://pokeapi.co/api/v2/pokemon-species/39/\"}, \"sprites\"=>{\"back_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png\", \"back_female\"=>nil, \"back_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/39.png\", \"back_shiny_female\"=>nil, \"front_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png\", \"front_female\"=>nil, \"front_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/39.png\", \"front_shiny_female\"=>nil}, \"stats\"=>[{\"base_stat\"=>20, \"effort\"=>0, \"stat\"=>{\"name\"=>\"speed\", \"url\"=>\"https://pokeapi.co/api/v2/stat/6/\"}}, {\"base_stat\"=>25, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/5/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/4/\"}}, {\"base_stat\"=>20, \"effort\"=>0, \"stat\"=>{\"name\"=>\"defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/3/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/2/\"}}, {\"base_stat\"=>115, \"effort\"=>2, \"stat\"=>{\"name\"=>\"hp\", \"url\"=>\"https://pokeapi.co/api/v2/stat/1/\"}}], \"types\"=>[{\"slot\"=>2, \"type\"=>{\"name\"=>\"fairy\", \"url\"=>\"https://pokeapi.co/api/v2/type/18/\"}}, {\"slot\"=>1, \"type\"=>{\"name\"=>\"normal\", \"url\"=>\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-29 20:01:58.518732"], ["updated_at", "2018-09-29 20:01:58.518732"]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Pokemon (0.54ms)
+Completed 202 Accepted in 632ms (Views: 10.4ms | ActiveRecord: 28.0ms)
+
+
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/pokemons/9" for 127.0.0.1 at 2018-09-29 21:46:54 +0100
+Processing by PokemonsController#delete as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[36mPokemon::HABTM_PokeTeams Destroy (0.5ms)[0m  [1m[31mDELETE FROM "poke_teams_pokemons" WHERE "poke_teams_pokemons"."pokemon_id" = $1[0m  [["pokemon_id", 9]]
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/pokemons_controller.rb:33
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:33
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 39ms (Views: 3.3ms | ActiveRecord: 10.0ms)
+
+
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/pokemons/new" for 127.0.0.1 at 2018-09-29 21:47:05 +0100
+Processing by PokemonsController#create as */*
+  Parameters: {"nickname"=>"Jiggly", "name"=>"jigglypuff", "nature"=>"angry", "level"=>"15", "user_id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mPokemon Create (0.6ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nickname", "Jiggly"], ["name", "jigglypuff"], ["nature", "angry"], ["level", 15], ["averagepokemonstats", "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"friend-guard\", \"url\"=>\"https://pokeapi.co/api/v2/ability/132/\"}, \"is_hidden\"=>true, \"slot\"=>3}, {\"ability\"=>{\"name\"=>\"competitive\", \"url\"=>\"https://pokeapi.co/api/v2/ability/172/\"}, \"is_hidden\"=>false, \"slot\"=>2}, {\"ability\"=>{\"name\"=>\"cute-charm\", \"url\"=>\"https://pokeapi.co/api/v2/ability/56/\"}, \"is_hidden\"=>false, \"slot\"=>1}], \"base_experience\"=>95, \"id\"=>39, \"name\"=>\"jigglypuff\", \"species\"=>{\"name\"=>\"jigglypuff\", \"url\"=>\"https://pokeapi.co/api/v2/pokemon-species/39/\"}, \"sprites\"=>{\"back_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png\", \"back_female\"=>nil, \"back_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/39.png\", \"back_shiny_female\"=>nil, \"front_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png\", \"front_female\"=>nil, \"front_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/39.png\", \"front_shiny_female\"=>nil}, \"stats\"=>[{\"base_stat\"=>20, \"effort\"=>0, \"stat\"=>{\"name\"=>\"speed\", \"url\"=>\"https://pokeapi.co/api/v2/stat/6/\"}}, {\"base_stat\"=>25, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/5/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/4/\"}}, {\"base_stat\"=>20, \"effort\"=>0, \"stat\"=>{\"name\"=>\"defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/3/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/2/\"}}, {\"base_stat\"=>115, \"effort\"=>2, \"stat\"=>{\"name\"=>\"hp\", \"url\"=>\"https://pokeapi.co/api/v2/stat/1/\"}}], \"types\"=>[{\"slot\"=>2, \"type\"=>{\"name\"=>\"fairy\", \"url\"=>\"https://pokeapi.co/api/v2/type/18/\"}}, {\"slot\"=>1, \"type\"=>{\"name\"=>\"normal\", \"url\"=>\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-29 20:47:06.227734"], ["updated_at", "2018-09-29 20:47:06.227734"]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Pokemon (0.46ms)
+Completed 202 Accepted in 458ms (Views: 4.0ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/pokemons/new" for 127.0.0.1 at 2018-09-29 21:47:37 +0100
+Processing by PokemonsController#create as */*
+  Parameters: {"nickname"=>"Jiggly", "name"=>"jigglypuff", "nature"=>"angry", "level"=>"15", "user_id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["nickname", "Jiggly"], ["name", "jigglypuff"], ["nature", "angry"], ["level", 15], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"friend-guard\",\"url\":\"https://pokeapi.co/api/v2/ability/132/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"competitive\",\"url\":\"https://pokeapi.co/api/v2/ability/172/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"cute-charm\",\"url\":\"https://pokeapi.co/api/v2/ability/56/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":95,\"id\":39,\"name\":\"jigglypuff\",\"species\":{\"name\":\"jigglypuff\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/39/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png\",\"back_female\":null,\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/39.png\",\"back_shiny_female\":null,\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png\",\"front_female\":null,\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/39.png\",\"front_shiny_female\":null},\"stats\":[{\"base_stat\":20,\"effort\":0,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":25,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":20,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":115,\"effort\":2,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":2,\"type\":{\"name\":\"fairy\",\"url\":\"https://pokeapi.co/api/v2/type/18/\"}},{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-29 20:47:37.936045"], ["updated_at", "2018-09-29 20:47:37.936045"]]
+  ↳ app/controllers/pokemons_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:13
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Pokemon (0.4ms)
+Completed 202 Accepted in 467ms (Views: 5.3ms | ActiveRecord: 7.4ms)
+
+
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (7.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jo"], ["created_at", "2018-09-29 21:14:07.114891"], ["updated_at", "2018-09-29 21:14:07.114891"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mPokeTeam Create (3.1ms)[0m  [1m[32mINSERT INTO "poke_teams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-09-29 21:14:07.155680"], ["updated_at", "2018-09-29 21:14:07.155680"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPokemon Create (0.6ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["user_id", 1], ["created_at", "2018-09-29 21:14:07.189922"], ["updated_at", "2018-09-29 21:14:07.189922"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["nickname", "pididgey"], ["name", "pidgey"], ["nature", "fiery"], ["level", 4], ["attack", 8], ["special_attack", 11], ["defence", 9], ["special_defence", 8], ["speed", 12], ["hp", 9], ["user_id", 1], ["created_at", "2018-09-29 21:14:07.196095"], ["updated_at", "2018-09-29 21:14:07.196095"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPokeTeam::HABTM_Pokemons Create (2.0ms)[0m  [1m[32mINSERT INTO "poke_teams_pokemons" ("poke_team_id", "pokemon_id") VALUES ($1, $2)[0m  [["poke_team_id", 2], ["pokemon_id", 12]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPokeTeam::HABTM_Pokemons Create (0.3ms)[0m  [1m[32mINSERT INTO "poke_teams_pokemons" ("poke_team_id", "pokemon_id") VALUES ($1, $2)[0m  [["poke_team_id", 2], ["pokemon_id", 13]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-29 22:14:30 +0100
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 12, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: nil, user_id: 1, created_at: "2018-09-29 21:14:07", updated_at: "2018-09-29 21:14:07">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (1.26ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (7482.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (237.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (235.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_test"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (621.3ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (475.6ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (17.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927134113_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokeTeams (20180927143725)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "poke_teams" ("id" bigserial primary key, "name" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927143725_create_poke_teams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" bigserial primary key, "nickname" character varying, "name" character varying, "nature" character varying, "level" integer, "attack" integer, "special_attack" integer, "defence" integer, "special_defence" integer, "speed" integer, "hp" integer, "averagepokemonstats" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927161729_create_pokemons.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokeTeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "poke_teams_pokemons" ("poke_team_id" integer, "pokemon_id" integer)[0m
+  ↳ db/migrate/20180927161922_create_poke_teams_pokemons_join_table.rb:3
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE  INDEX  "index_poke_teams_pokemons_on_poke_team_id" ON "poke_teams_pokemons"  ("poke_team_id")[0m
+  ↳ db/migrate/20180927161922_create_poke_teams_pokemons_join_table.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_poke_teams_pokemons_on_pokemon_id" ON "poke_teams_pokemons"  ("pokemon_id")[0m
+  ↳ db/migrate/20180927161922_create_poke_teams_pokemons_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-29 21:24:28.142506"], ["updated_at", "2018-09-29 21:24:28.142506"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jo"], ["created_at", "2018-09-29 21:27:29.630475"], ["updated_at", "2018-09-29 21:27:29.630475"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mPokeTeam Create (0.6ms)[0m  [1m[32mINSERT INTO "poke_teams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-09-29 21:27:29.669644"], ["updated_at", "2018-09-29 21:27:29.669644"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"https://pokeapi.co/api/v2/ability/55/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"guts\",\"url\":\"https://pokeapi.co/api/v2/ability/62/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"run-away\",\"url\":\"https://pokeapi.co/api/v2/ability/50/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":51,\"id\":19,\"name\":\"rattata\",\"species\":{\"name\":\"rattata\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/19/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png\",\"back_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/19.png\",\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/19.png\",\"back_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/19.png\",\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\",\"front_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/19.png\",\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png\",\"front_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/19.png\"},\"stats\":[{\"base_stat\":72,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":25,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":56,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":30,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-29 21:27:30.337130"], ["updated_at", "2018-09-29 21:27:30.337130"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "pididgey"], ["name", "pidgey"], ["nature", "fiery"], ["level", 4], ["attack", 8], ["special_attack", 11], ["defence", 9], ["special_defence", 8], ["speed", 12], ["hp", 9], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"big-pecks\",\"url\":\"https://pokeapi.co/api/v2/ability/145/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"tangled-feet\",\"url\":\"https://pokeapi.co/api/v2/ability/77/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"keen-eye\",\"url\":\"https://pokeapi.co/api/v2/ability/51/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":50,\"id\":16,\"name\":\"pidgey\",\"species\":{\"name\":\"pidgey\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/16/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png\",\"back_female\":null,\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/16.png\",\"back_shiny_female\":null,\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png\",\"front_female\":null,\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png\",\"front_shiny_female\":null},\"stats\":[{\"base_stat\":56,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":2,\"type\":{\"name\":\"flying\",\"url\":\"https://pokeapi.co/api/v2/type/3/\"}},{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-29 21:27:30.745630"], ["updated_at", "2018-09-29 21:27:30.745630"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPokeTeam::HABTM_Pokemons Create (0.7ms)[0m  [1m[32mINSERT INTO "poke_teams_pokemons" ("poke_team_id", "pokemon_id") VALUES ($1, $2)[0m  [["poke_team_id", 1], ["pokemon_id", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPokeTeam::HABTM_Pokemons Create (0.3ms)[0m  [1m[32mINSERT INTO "poke_teams_pokemons" ("poke_team_id", "pokemon_id") VALUES ($1, $2)[0m  [["poke_team_id", 1], ["pokemon_id", 2]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-29 22:29:20 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"h...", user_id: 1, created_at: "2018-09-29 21:27:30", updated_at: "2018-09-29 21:27:30">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (1.14ms)
+Completed 200 OK in 55ms (Views: 34.9ms | ActiveRecord: 7.6ms)
+
+

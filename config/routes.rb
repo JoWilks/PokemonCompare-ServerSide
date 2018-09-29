@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :poke_teams
   resources :users
 
+  get '/pokemons', to: 'pokemons#index'
   post '/pokemons/new', to: 'pokemons#create'
   post '/pokemons/search', to: 'pokemons#search'
   patch '/pokemons/:id', to: 'pokemons#update'

@@ -9,7 +9,7 @@ class PokemonsController < ApplicationController
     def create
         pokeData = Pokemon.get_pokemon(params["name"])
         @pokemon = Pokemon.new(pokemon_params)
-        @pokemon.averagepokemonstats = JSON.stringify(pokeData)
+        @pokemon.averagepokemonstats = pokeData
         if @pokemon.save
             render json: @pokemon, status: :accepted
         else 
