@@ -2858,3 +2858,2470 @@ No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rat
 Completed 200 OK in 55ms (Views: 34.9ms | ActiveRecord: 7.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-30 12:45:30 +0100
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 25ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-09-30 12:45:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 12:45:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/poketeams"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 12:45:47 +0100
+Processing by PokeTeamsController#index as */*
+  [1m[36mPokeTeam Load (29.2ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.37ms)
+Completed 200 OK in 107ms (Views: 22.8ms | ActiveRecord: 67.2ms)
+
+
+  [1m[36mPokeTeam Load (0.4ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokeTeam Load (2.0ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" ORDER BY "poke_teams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokeTeam Load (3.7ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" ORDER BY "poke_teams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (28.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" INNER JOIN "poke_teams_pokemons" ON "pokemons"."id" = "poke_teams_pokemons"."pokemon_id" WHERE "poke_teams_pokemons"."poke_team_id" = $1 LIMIT $2[0m  [["poke_team_id", 1], ["LIMIT", 11]]
+  [1m[36mPokeTeam Load (0.8ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" ORDER BY "poke_teams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "poke_teams_pokemons" ON "pokemons"."id" = "poke_teams_pokemons"."pokemon_id" WHERE "poke_teams_pokemons"."poke_team_id" = $1[0m  [["poke_team_id", 1]]
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:36:42 +0100
+Processing by PokeTeamsController#index as */*
+  [1m[36mPokeTeam Load (0.6ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.6ms)
+Completed 200 OK in 43ms (Views: 23.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 13:36:53 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 13:36:57 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"h...", user_id: 1, created_at: "2018-09-29 21:27:30", updated_at: "2018-09-29 21:27:30">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (0.8ms)
+Completed 200 OK in 43ms (Views: 26.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 13:37:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/poketeams"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:37:17 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (3.4ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.45ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/poke_team" for 127.0.0.1 at 2018-09-30 13:37:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/poke_team"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:37:55 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (3.3ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.33ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:37:57 +0100
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PokeTeamsController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:38:53 +0100
+Processing by PokeTeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant PokeTeamsController::Poketeam):
+  
+app/controllers/poke_teams_controller.rb:9:in `show'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-09-30 13:38:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:39:44 +0100
+Processing by PokeTeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant PokeTeamsController::Poketeam):
+  
+app/controllers/poke_teams_controller.rb:9:in `show'
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:39:54 +0100
+Processing by PokeTeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokeTeam Load (0.3ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" WHERE "poke_teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poke_teams_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with PokeTeam (0.52ms)
+Completed 200 OK in 32ms (Views: 11.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:40:16 +0100
+Processing by PokeTeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokeTeam Load (0.3ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" WHERE "poke_teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poke_teams_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with PokeTeam (0.36ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:40:19 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (1.6ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.3ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:45:43 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (0.5ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.18ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 13:45:47 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"h...", user_id: 1, created_at: "2018-09-29 21:27:30", updated_at: "2018-09-29 21:27:30">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (1.36ms)
+Completed 200 OK in 31ms (Views: 17.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 13:47:00 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"h...", user_id: 1, created_at: "2018-09-29 21:27:30", updated_at: "2018-09-29 21:27:30">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (1.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:47:05 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (1.7ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.25ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:53:10 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (0.6ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.21ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/poke_teams/1" for 127.0.0.1 at 2018-09-30 13:53:16 +0100
+Processing by PokeTeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokeTeam Load (0.5ms)[0m  [1m[34mSELECT  "poke_teams".* FROM "poke_teams" WHERE "poke_teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poke_teams_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with PokeTeam (0.46ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:53:44 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (1.4ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.37ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 13:55:53 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (2.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+No serializer found for resource: #<Pokemon id: 1, nickname: "ratty", name: "rattata", nature: "greedy", level: 5, attack: 10, special_attack: 12, defence: 8, special_defence: 6, speed: 14, hp: 10, averagepokemonstats: "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"h...", user_id: 1, created_at: "2018-09-29 21:27:30", updated_at: "2018-09-29 21:27:30">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Pokemon::ActiveRecord_Relation (1.35ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 13:58:14 +0100
+Processing by PokeTeamsController#index as HTML
+  [1m[36mPokeTeam Load (1.8ms)[0m  [1m[34mSELECT "poke_teams".* FROM "poke_teams"[0m
+  ↳ app/controllers/poke_teams_controller.rb:5
+No serializer found for resource: #<PokeTeam id: 1, name: "blah", user_id: 1, created_at: "2018-09-29 21:27:29", updated_at: "2018-09-29 21:27:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with PokeTeam::ActiveRecord_Relation (0.29ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.8ms)
+
+
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokeTeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (34.8ms)[0m  [1m[35mDROP TABLE "poke_teams_pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (30.0ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokeTeams (20180927143725)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "poke_teams"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7523.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (230.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (243.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_test"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (594.6ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (527.9ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (26.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927134113_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "poketeams" ("id" bigserial primary key, "name" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927143725_create_poketeams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" bigserial primary key, "nickname" character varying, "name" character varying, "nature" character varying, "level" integer, "attack" integer, "special_attack" integer, "defence" integer, "special_defence" integer, "speed" integer, "hp" integer, "averagepokemonstats" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927161729_create_pokemons.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "poketeams_pokemons" ("poketeam_id" integer, "pokemon_id" integer)[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_poketeams_pokemons_on_poketeam_id" ON "poketeams_pokemons"  ("poketeam_id")[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE  INDEX  "index_poketeams_pokemons_on_pokemon_id" ON "poketeams_pokemons"  ("pokemon_id")[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-30 13:06:12.831802"], ["updated_at", "2018-09-30 13:06:12.831802"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jo"], ["created_at", "2018-09-30 13:07:37.736282"], ["updated_at", "2018-09-30 13:07:37.736282"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPoketeam Create (1.3ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-09-30 13:08:08.573014"], ["updated_at", "2018-09-30 13:08:08.573014"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.8ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoketeam Load (0.7ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-09-30 14:14:03 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:14:41 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 39ms (Views: 23.7ms | ActiveRecord: 5.4ms)
+
+
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPokemon Create (0.9ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"https://pokeapi.co/api/v2/ability/55/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"guts\",\"url\":\"https://pokeapi.co/api/v2/ability/62/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"run-away\",\"url\":\"https://pokeapi.co/api/v2/ability/50/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":51,\"id\":19,\"name\":\"rattata\",\"species\":{\"name\":\"rattata\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/19/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png\",\"back_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/19.png\",\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/19.png\",\"back_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/19.png\",\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\",\"front_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/19.png\",\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png\",\"front_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/19.png\"},\"stats\":[{\"base_stat\":72,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":25,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":56,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":30,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-30 13:16:22.065932"], ["updated_at", "2018-09-30 13:16:22.065932"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:16:34 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.29ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 10.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "pokemons_poketeams" does not exist
+LINE 1: SELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_p...
+                                                         ^
+: SELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1):
+  
+app/controllers/pokemons_controller.rb:5:in `index'
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "poketeams_pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "poketeams"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7441.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (187.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (173.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_test"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (567.5ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (516.0ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927134113_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "poketeams" ("id" bigserial primary key, "name" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927143725_create_poketeams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" bigserial primary key, "nickname" character varying, "name" character varying, "nature" character varying, "level" integer, "attack" integer, "special_attack" integer, "defence" integer, "special_defence" integer, "speed" integer, "hp" integer, "averagepokemonstats" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927161729_create_pokemons.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "poketeams_pokemons" ("poketeam_id" integer, "pokemon_id" integer)[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_poketeams_pokemons_on_poketeam_id" ON "poketeams_pokemons"  ("poketeam_id")[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_poketeams_pokemons_on_pokemon_id" ON "poketeams_pokemons"  ("pokemon_id")[0m
+  ↳ db/migrate/20180927161922_create_poketeams_pokemons_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-30 13:19:32.114252"], ["updated_at", "2018-09-30 13:19:32.114252"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jo"], ["created_at", "2018-09-30 13:19:58.549259"], ["updated_at", "2018-09-30 13:19:58.549259"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mPoketeam Create (0.6ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-09-30 13:19:58.587877"], ["updated_at", "2018-09-30 13:19:58.587877"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"https://pokeapi.co/api/v2/ability/55/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"guts\",\"url\":\"https://pokeapi.co/api/v2/ability/62/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"run-away\",\"url\":\"https://pokeapi.co/api/v2/ability/50/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":51,\"id\":19,\"name\":\"rattata\",\"species\":{\"name\":\"rattata\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/19/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png\",\"back_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/19.png\",\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/19.png\",\"back_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/19.png\",\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\",\"front_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/19.png\",\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png\",\"front_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/19.png\"},\"stats\":[{\"base_stat\":72,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":25,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":56,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":30,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-30 13:19:59.226541"], ["updated_at", "2018-09-30 13:19:59.226541"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "pididgey"], ["name", "pidgey"], ["nature", "fiery"], ["level", 4], ["attack", 8], ["special_attack", 11], ["defence", 9], ["special_defence", 8], ["speed", 12], ["hp", 9], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"big-pecks\",\"url\":\"https://pokeapi.co/api/v2/ability/145/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"tangled-feet\",\"url\":\"https://pokeapi.co/api/v2/ability/77/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"keen-eye\",\"url\":\"https://pokeapi.co/api/v2/ability/51/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":50,\"id\":16,\"name\":\"pidgey\",\"species\":{\"name\":\"pidgey\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/16/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png\",\"back_female\":null,\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/16.png\",\"back_shiny_female\":null,\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png\",\"front_female\":null,\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png\",\"front_shiny_female\":null},\"stats\":[{\"base_stat\":56,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":2,\"type\":{\"name\":\"flying\",\"url\":\"https://pokeapi.co/api/v2/type/3/\"}},{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-30 13:19:59.643754"], ["updated_at", "2018-09-30 13:19:59.643754"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeamsPokemonsJoinTable (20180927161922)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "poketeams_pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "poketeams"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (204.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (217.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_test"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (624.1ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (439.8ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927134113_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "poketeams" ("id" bigserial primary key, "name" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927143725_create_poketeams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" bigserial primary key, "nickname" character varying, "name" character varying, "nature" character varying, "level" integer, "attack" integer, "special_attack" integer, "defence" integer, "special_defence" integer, "speed" integer, "hp" integer, "averagepokemonstats" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927161729_create_pokemons.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemonsPoketeamsJoinTable (20180927161922)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pokemons_poketeams" ("poketeam_id" integer, "pokemon_id" integer)[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_pokemons_poketeams_on_poketeam_id" ON "pokemons_poketeams"  ("poketeam_id")[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE  INDEX  "index_pokemons_poketeams_on_pokemon_id" ON "pokemons_poketeams"  ("pokemon_id")[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-30 13:22:31.577177"], ["updated_at", "2018-09-30 13:22:31.577177"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jo"], ["created_at", "2018-09-30 13:22:41.043387"], ["updated_at", "2018-09-30 13:22:41.043387"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mPoketeam Create (0.6ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-09-30 13:22:41.065689"], ["updated_at", "2018-09-30 13:22:41.065689"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"hustle\",\"url\":\"https://pokeapi.co/api/v2/ability/55/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"guts\",\"url\":\"https://pokeapi.co/api/v2/ability/62/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"run-away\",\"url\":\"https://pokeapi.co/api/v2/ability/50/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":51,\"id\":19,\"name\":\"rattata\",\"species\":{\"name\":\"rattata\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/19/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png\",\"back_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/19.png\",\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/19.png\",\"back_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/19.png\",\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\",\"front_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/19.png\",\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png\",\"front_shiny_female\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/19.png\"},\"stats\":[{\"base_stat\":72,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":25,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":56,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":30,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-30 13:22:41.977767"], ["updated_at", "2018-09-30 13:22:41.977767"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "pididgey"], ["name", "pidgey"], ["nature", "fiery"], ["level", 4], ["attack", 8], ["special_attack", 11], ["defence", 9], ["special_defence", 8], ["speed", 12], ["hp", 9], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"big-pecks\",\"url\":\"https://pokeapi.co/api/v2/ability/145/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"tangled-feet\",\"url\":\"https://pokeapi.co/api/v2/ability/77/\"},\"is_hidden\":false,\"slot\":2},{\"ability\":{\"name\":\"keen-eye\",\"url\":\"https://pokeapi.co/api/v2/ability/51/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":50,\"id\":16,\"name\":\"pidgey\",\"species\":{\"name\":\"pidgey\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/16/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png\",\"back_female\":null,\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/16.png\",\"back_shiny_female\":null,\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png\",\"front_female\":null,\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png\",\"front_shiny_female\":null},\"stats\":[{\"base_stat\":56,\"effort\":1,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":35,\"effort\":0,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":40,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":2,\"type\":{\"name\":\"flying\",\"url\":\"https://pokeapi.co/api/v2/type/3/\"}},{\"slot\":1,\"type\":{\"name\":\"normal\",\"url\":\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-09-30 13:22:42.508341"], ["updated_at", "2018-09-30 13:22:42.508341"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 1], ["pokemon_id", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 1], ["pokemon_id", 2]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:33:24 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.41ms)
+Completed 200 OK in 108ms (Views: 86.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:33:50 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.59ms)
+Completed 200 OK in 17ms (Views: 8.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:40:43 +0100
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:40:53 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.7ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (58.04ms)
+Completed 200 OK in 100ms (Views: 71.7ms | ActiveRecord: 13.6ms)
+
+
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.76ms)
+Completed 200 OK in 74ms (Views: 61.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:41:47 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.26ms)
+Completed 200 OK in 58ms (Views: 44.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/poke_teams" for 127.0.0.1 at 2018-09-30 14:43:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/poke_teams"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:43:08 +0100
+Processing by PoketeamsController#index as */*
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.75ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:47:07 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (38.31ms)
+Completed 200 OK in 57ms (Views: 41.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:47:17 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.65ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:49:12 +0100
+Processing by PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.92ms)
+Completed 200 OK in 57ms (Views: 45.7ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:49:25 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (1.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.04ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:49:44 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.15ms)
+Completed 200 OK in 60ms (Views: 46.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 14:51:08 +0100
+Processing by PoketeamsController#index as */*
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.61ms)
+Completed 200 OK in 60ms (Views: 46.4ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-09-30 14:54:28 +0100
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.59ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/pokemons/new" for 127.0.0.1 at 2018-09-30 14:58:03 +0100
+Processing by PokemonsController#create as */*
+  Parameters: {"name"=>"team sprocket", "user_ud"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://pokeapi.co/api/v2/pokemon/team sprocket/):
+  
+app/models/pokemon.rb:7:in `get_pokemon'
+app/controllers/pokemons_controller.rb:10:in `create'
+Started POST "/poketeams/new" for 127.0.0.1 at 2018-09-30 14:58:22 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/poketeams/new"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poketeams/new" for 127.0.0.1 at 2018-09-30 14:59:35 +0100
+Processing by PoketeamsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:9
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Poketeam with 'id'=new):
+  
+app/controllers/poketeams_controller.rb:9:in `show'
+Started GET "/poketeams/new" for 127.0.0.1 at 2018-09-30 15:04:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/poketeams/new"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/poketeams/new" for 127.0.0.1 at 2018-09-30 15:04:44 +0100
+Processing by PoketeamsController#create as */*
+  Parameters: {"name"=>"team sprocket", "user_ud"=>"1"}
+Unpermitted parameter: :user_ud
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/poketeams_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 500 Internal Server Error in 35ms (Views: 4.1ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/poketeams/new" for 127.0.0.1 at 2018-09-30 15:04:53 +0100
+Processing by PoketeamsController#create as */*
+  Parameters: {"name"=>"team sprocket", "user_id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:15
+  [1m[36mPoketeam Create (0.6ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "team sprocket"], ["user_id", 1], ["created_at", "2018-09-30 14:04:53.323471"], ["updated_at", "2018-09-30 14:04:53.323471"]]
+  ↳ app/controllers/poketeams_controller.rb:15
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:15
+[active_model_serializers]   [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:16
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (14.32ms)
+Completed 202 Accepted in 33ms (Views: 12.7ms | ActiveRecord: 9.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:17:19 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPoketeam Update (1.8ms)[0m  [1m[33mUPDATE "poketeams" SET "name" = $1, "updated_at" = $2 WHERE "poketeams"."id" = $3[0m  [["name", "Team Rocket"], ["updated_at", "2018-09-30 14:17:19.594043"], ["id", 2]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:21
+[active_model_serializers]   [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:22
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (14.77ms)
+Completed 202 Accepted in 55ms (Views: 12.5ms | ActiveRecord: 16.6ms)
+
+
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:36:17 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"[1, 2]", "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 12.8ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:38:08 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"[1, 2]", "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started GET "/poketeams" for 127.0.0.1 at 2018-09-30 15:39:57 +0100
+Processing by PoketeamsController#index as HTML
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams"[0m
+  ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 1]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers]   [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.89ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 2.7ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:40:24 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>{"0"=>"1", "1"=>"2"}, "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:25
+[active_model_serializers]   [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:26
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (3.7ms)
+Completed 202 Accepted in 13ms (Views: 2.7ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoketeam Load (0.7ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1 LIMIT $2[0m  [["poketeam_id", 2], ["LIMIT", 11]]
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:41:53 +0100
+  
+SyntaxError (/Users/flatiron/Labs/PokemonCompare-ServerSide/app/controllers/poketeams_controller.rb:27: syntax error, unexpected keyword_if, expecting ']'
+        if @poketeam.save
+          ^):
+  
+app/controllers/poketeams_controller.rb:27: syntax error, unexpected keyword_if, expecting ']'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:42:13 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>{"0"=>"1", "1"=>"2"}, "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActionController::Parameters (0.08ms)
+Completed 202 Accepted in 52ms (Views: 4.0ms | ActiveRecord: 9.4ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:42:42 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "[1, 2]"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 202 Accepted in 10ms (Views: 2.3ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:42:59 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.14ms)
+Completed 202 Accepted in 57ms (Views: 8.0ms | ActiveRecord: 9.3ms)
+
+
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" ORDER BY "poketeams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1 LIMIT $2[0m  [["poketeam_id", 2], ["LIMIT", 11]]
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:43:40 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 202 Accepted in 54ms (Views: 0.5ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:43:51 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "[1, 2]"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.11ms)
+Completed 202 Accepted in 49ms (Views: 3.3ms | ActiveRecord: 9.4ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:45:02 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 8.8ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/poketeams_controller.rb:25:in `+'
+app/controllers/poketeams_controller.rb:25:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:45:55 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "[1, 2]"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 59ms (Views: 3.0ms | ActiveRecord: 9.0ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:46:09 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 8.4ms)
+
+
+  
+NoMethodError (undefined method `to_array' for ["[1, 2]"]:Array
+Did you mean?  to_ary):
+  
+app/controllers/poketeams_controller.rb:25:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:46:39 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["[1, 2]"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 8.3ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/poketeams_controller.rb:25:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:47:04 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1,2", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:47:13 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1,2", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 9.1ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:47:29 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"\"1,2\"", "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:47:46 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"\"1, 2\"", "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 8.4ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:47:57 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1, 2", "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:48:20 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1", "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.5ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:48:42 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 8.6ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:48:49 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"\"1\"", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:48:59 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "\"1\""
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 10ms (Views: 3.5ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:04 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "1"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 7ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:08 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "1,2"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 9ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:21 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 8ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:29 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1,2,3", "id"=>"2"}
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:41 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "\"1\",\"2\""
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 8ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:49:48 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:27
+No serializer found for resource: "\"1\",\"2\""
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.05ms)
+Completed 202 Accepted in 8ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:50:01 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 8.5ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/poketeams_controller.rb:25:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:50:31 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 8.2ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/poketeams_controller.rb:26:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:50:46 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 8.8ms)
+
+
+  
+NoMethodError (undefined method `to_arr' for ["\"1\",\"2\""]:Array
+Did you mean?  to_a
+               to_ary):
+  
+app/controllers/poketeams_controller.rb:26:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:50:55 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["\"1\",\"2\""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "\"1\",\"2\""
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 53ms (Views: 3.0ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:51:03 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (1.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.17ms)
+Completed 202 Accepted in 9ms (Views: 0.7ms | ActiveRecord: 2.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:51:12 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"\"1,2,3\"", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:51:20 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"\"1,2,3\"", "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:51:26 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"1,2,3", "id"=>"2"}
+  [1m[36mPoketeam Load (0.9ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:51:33 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 9ms (Views: 0.7ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:52:11 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 51ms (Views: 3.3ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:52:21 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 50ms (Views: 3.0ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:53:08 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 202 Accepted in 49ms (Views: 3.2ms | ActiveRecord: 8.9ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:53:25 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 48ms (Views: 3.2ms | ActiveRecord: 8.8ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:54:17 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>"[1,2,3]", "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 8.2ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/pokemon.rb:28:in `include?'
+app/models/pokemon.rb:28:in `block in find_all'
+app/models/pokemon.rb:27:in `find_all'
+app/controllers/poketeams_controller.rb:22:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:54:51 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.09ms)
+Completed 202 Accepted in 15ms (Views: 6.1ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:54:59 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1,2,3"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 54ms (Views: 3.5ms | ActiveRecord: 10.0ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:55:05 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 58ms (Views: 3.2ms | ActiveRecord: 9.3ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:56:21 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 8.2ms)
+
+
+  
+NoMethodError (undefined method `to_i' for ["1", "2", "3"]:Array
+Did you mean?  to_s
+               to_a
+               to_h):
+  
+app/controllers/poketeams_controller.rb:26:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:56:33 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: "1"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 202 Accepted in 51ms (Views: 3.2ms | ActiveRecord: 8.8ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:56:58 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 9.5ms)
+
+
+  
+NoMethodError (undefined method `to_int' for "1":String
+Did you mean?  to_i
+               to_time
+               to_str
+               to_nfd
+               to_nfc
+               taint):
+  
+app/controllers/poketeams_controller.rb:26:in `block in update'
+app/controllers/poketeams_controller.rb:26:in `map'
+app/controllers/poketeams_controller.rb:26:in `update'
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:57:09 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (1.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+No serializer found for resource: 1
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 202 Accepted in 57ms (Views: 5.7ms | ActiveRecord: 9.7ms)
+
+
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:58:00 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2,3"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.3ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+[active_model_serializers]   [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:29
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (8.56ms)
+Completed 202 Accepted in 76ms (Views: 10.1ms | ActiveRecord: 10.4ms)
+
+
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 15:59:05 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>["1,2"], "id"=>"2"}
+  [1m[36mPoketeam Load (0.2ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 2], ["pokemon_id", 1]]
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 2], ["pokemon_id", 2]]
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:28
+[active_model_serializers]   [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/poketeams_controller.rb:29
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (4.75ms)
+Completed 202 Accepted in 95ms (Views: 5.9ms | ActiveRecord: 14.2ms)
+
+
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPoketeam Create (0.8ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Low Level"], ["user_id", 1], ["created_at", "2018-09-30 15:12:35.516956"], ["updated_at", "2018-09-30 15:12:35.516956"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1 LIMIT $2[0m  [["poketeam_id", 3], ["LIMIT", 11]]
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 3], ["pokemon_id", 1]]
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 3], ["pokemon_id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPoketeam::HABTM_Pokemons Destroy (2.5ms)[0m  [1m[31mDELETE FROM "pokemons_poketeams" WHERE "pokemons_poketeams"."poketeam_id" = $1 AND "pokemons_poketeams"."pokemon_id" IN ($2, $3)[0m  [["poketeam_id", 3], ["pokemon_id", 1], ["pokemon_id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.5ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 3], ["pokemon_id", 1]]
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 3], ["pokemon_id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started PATCH "/poketeams/2" for 127.0.0.1 at 2018-09-30 16:15:38 +0100
+Processing by PoketeamsController#update as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>[""], "id"=>"2"}
+  [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:19
+Unpermitted parameters: :pokemon_ids, :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:20
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/models/pokemon.rb:28
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+  ↳ app/controllers/poketeams_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:24
+  [1m[36mPoketeam::HABTM_Pokemons Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pokemons_poketeams" WHERE "pokemons_poketeams"."poketeam_id" = $1 AND "pokemons_poketeams"."pokemon_id" IN ($2, $3)[0m  [["poketeam_id", 2], ["pokemon_id", 1], ["pokemon_id", 2]]
+  ↳ app/controllers/poketeams_controller.rb:24
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:26
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 202 Accepted in 71ms (Views: 2.5ms | ActiveRecord: 16.9ms)
+
+
+Started DELETE "/poketeams/3" for 127.0.0.1 at 2018-09-30 16:26:00 +0100
+Processing by PoketeamsController#delete as */*
+  Parameters: {"name"=>"Team Rocket", "user_id"=>"1", "pokemon_ids"=>[""], "id"=>"3"}
+  [1m[36mPoketeam Load (0.6ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" WHERE "poketeams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/poketeams_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/poketeams_controller.rb:34
+  [1m[36mPoketeam::HABTM_Pokemons Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pokemons_poketeams" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 3]]
+  ↳ app/controllers/poketeams_controller.rb:34
+  [1m[36mPoketeam Destroy (0.3ms)[0m  [1m[31mDELETE FROM "poketeams" WHERE "poketeams"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/poketeams_controller.rb:34
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/poketeams_controller.rb:34
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 42ms (Views: 5.9ms | ActiveRecord: 15.5ms)
+
+
+  [1m[36mPoketeam Load (0.9ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]

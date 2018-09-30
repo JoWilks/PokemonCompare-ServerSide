@@ -1,6 +1,6 @@
-class CreatePokeTeams < ActiveRecord::Migration[5.2]
+class CreatePoketeams < ActiveRecord::Migration[5.2]
   def change
-    create_table :poke_teams do |t|
+    create_table :poketeams do |t|
       t.text :name
       t.integer :user_id
       t.timestamps

@@ -1,6 +1,6 @@
 class Pokemon < ApplicationRecord
     belongs_to :user
-    has_and_belongs_to_many :poke_teams
+    has_and_belongs_to_many :poketeams
 
 
     def self.get_pokemon(name) 
@@ -23,4 +23,12 @@ class Pokemon < ApplicationRecord
 
     end
 
+    def self.find_all(array)
+        modarr = array.first.split(',').map{|id| id.to_i}
+        Pokemon.select{ |pokemon|
+            array.include?(pokemon.id)
+        }
+    end
+
+    
 end

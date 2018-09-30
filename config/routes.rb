@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  resources :poke_teams
   resources :users
+
+  get '/poketeams', to: 'poketeams#index'
+  post '/poketeams/new', to: 'poketeams#create'
+  patch '/poketeams/:id', to: 'poketeams#update'
+  delete '/poketeams/:id', to: 'poketeams#delete'
 
   get '/pokemons', to: 'pokemons#index'
   post '/pokemons/new', to: 'pokemons#create'
