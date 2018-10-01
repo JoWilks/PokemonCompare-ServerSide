@@ -5974,3 +5974,604 @@ Processing by PokemonsController#create as */*
 Completed 202 Accepted in 1178ms (Views: 202.8ms | ActiveRecord: 37.9ms)
 
 
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemonsPoketeamsJoinTable (20180927161922)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (34.7ms)[0m  [1m[35mDROP TABLE "pokemons_poketeams"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (27.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (29.4ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "poketeams"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (283.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_development"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (218.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "PokeCompare-ServerSide_test"[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (610.5ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (515.3ms)[0m  [1m[35mCREATE DATABASE "PokeCompare-ServerSide_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180927134113)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (26.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927134113_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927134113"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePoketeams (20180927143725)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "poketeams" ("id" bigserial primary key, "name" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927143725_create_poketeams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927143725"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemons (20180927161729)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" bigserial primary key, "nickname" character varying, "name" character varying, "nature" character varying, "level" integer, "attack" integer, "special_attack" integer, "defence" integer, "special_defence" integer, "speed" integer, "hp" integer, "averagepokemonstats" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180927161729_create_pokemons.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161729"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePokemonsPoketeamsJoinTable (20180927161922)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "pokemons_poketeams" ("poketeam_id" integer, "pokemon_id" integer)[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE  INDEX  "index_pokemons_poketeams_on_poketeam_id" ON "pokemons_poketeams"  ("poketeam_id")[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_pokemons_poketeams_on_pokemon_id" ON "pokemons_poketeams"  ("pokemon_id")[0m
+  ↳ db/migrate/20180927161922_create_pokemons_poketeams_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180927161922"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-01 09:37:25.472163"], ["updated_at", "2018-10-01 09:37:25.472163"]]
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480013681660335095)[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.9ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "jo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jo"], ["password_digest", "$2a$10$SDwT60nLx7HlB2pEeX.W/eVQAMAa.HhaccoFD8e3lC2gJMoQMDOYK"], ["created_at", "2018-10-01 09:38:44.672621"], ["updated_at", "2018-10-01 09:38:44.672621"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mPoketeam Create (0.7ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "blah"], ["user_id", 1], ["created_at", "2018-10-01 09:38:44.709993"], ["updated_at", "2018-10-01 09:38:44.709993"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mPokemon Create (0.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "ratty"], ["name", "rattata"], ["nature", "greedy"], ["level", 5], ["attack", 10], ["special_attack", 12], ["defence", 8], ["special_defence", 6], ["speed", 14], ["hp", 10], ["averagepokemonstats", "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"hustle\", \"url\"=>\"https://pokeapi.co/api/v2/ability/55/\"}, \"is_hidden\"=>true, \"slot\"=>3}, {\"ability\"=>{\"name\"=>\"guts\", \"url\"=>\"https://pokeapi.co/api/v2/ability/62/\"}, \"is_hidden\"=>false, \"slot\"=>2}, {\"ability\"=>{\"name\"=>\"run-away\", \"url\"=>\"https://pokeapi.co/api/v2/ability/50/\"}, \"is_hidden\"=>false, \"slot\"=>1}], \"base_experience\"=>51, \"id\"=>19, \"name\"=>\"rattata\", \"species\"=>{\"name\"=>\"rattata\", \"url\"=>\"https://pokeapi.co/api/v2/pokemon-species/19/\"}, \"sprites\"=>{\"back_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png\", \"back_female\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/19.png\", \"back_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/19.png\", \"back_shiny_female\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/19.png\", \"front_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png\", \"front_female\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/19.png\", \"front_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png\", \"front_shiny_female\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/19.png\"}, \"stats\"=>[{\"base_stat\"=>72, \"effort\"=>1, \"stat\"=>{\"name\"=>\"speed\", \"url\"=>\"https://pokeapi.co/api/v2/stat/6/\"}}, {\"base_stat\"=>35, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/5/\"}}, {\"base_stat\"=>25, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/4/\"}}, {\"base_stat\"=>35, \"effort\"=>0, \"stat\"=>{\"name\"=>\"defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/3/\"}}, {\"base_stat\"=>56, \"effort\"=>0, \"stat\"=>{\"name\"=>\"attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/2/\"}}, {\"base_stat\"=>30, \"effort\"=>0, \"stat\"=>{\"name\"=>\"hp\", \"url\"=>\"https://pokeapi.co/api/v2/stat/1/\"}}], \"types\"=>[{\"slot\"=>1, \"type\"=>{\"name\"=>\"normal\", \"url\"=>\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-10-01 09:38:45.137693"], ["updated_at", "2018-10-01 09:38:45.137693"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "nature", "level", "attack", "special_attack", "defence", "special_defence", "speed", "hp", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["nickname", "pididgey"], ["name", "pidgey"], ["nature", "fiery"], ["level", 4], ["attack", 8], ["special_attack", 11], ["defence", 9], ["special_defence", 8], ["speed", 12], ["hp", 9], ["averagepokemonstats", "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"big-pecks\", \"url\"=>\"https://pokeapi.co/api/v2/ability/145/\"}, \"is_hidden\"=>true, \"slot\"=>3}, {\"ability\"=>{\"name\"=>\"tangled-feet\", \"url\"=>\"https://pokeapi.co/api/v2/ability/77/\"}, \"is_hidden\"=>false, \"slot\"=>2}, {\"ability\"=>{\"name\"=>\"keen-eye\", \"url\"=>\"https://pokeapi.co/api/v2/ability/51/\"}, \"is_hidden\"=>false, \"slot\"=>1}], \"base_experience\"=>50, \"id\"=>16, \"name\"=>\"pidgey\", \"species\"=>{\"name\"=>\"pidgey\", \"url\"=>\"https://pokeapi.co/api/v2/pokemon-species/16/\"}, \"sprites\"=>{\"back_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png\", \"back_female\"=>nil, \"back_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/16.png\", \"back_shiny_female\"=>nil, \"front_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png\", \"front_female\"=>nil, \"front_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png\", \"front_shiny_female\"=>nil}, \"stats\"=>[{\"base_stat\"=>56, \"effort\"=>1, \"stat\"=>{\"name\"=>\"speed\", \"url\"=>\"https://pokeapi.co/api/v2/stat/6/\"}}, {\"base_stat\"=>35, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/5/\"}}, {\"base_stat\"=>35, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/4/\"}}, {\"base_stat\"=>40, \"effort\"=>0, \"stat\"=>{\"name\"=>\"defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/3/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/2/\"}}, {\"base_stat\"=>40, \"effort\"=>0, \"stat\"=>{\"name\"=>\"hp\", \"url\"=>\"https://pokeapi.co/api/v2/stat/1/\"}}], \"types\"=>[{\"slot\"=>2, \"type\"=>{\"name\"=>\"flying\", \"url\"=>\"https://pokeapi.co/api/v2/type/3/\"}}, {\"slot\"=>1, \"type\"=>{\"name\"=>\"normal\", \"url\"=>\"https://pokeapi.co/api/v2/type/1/\"}}]}"], ["user_id", 1], ["created_at", "2018-10-01 09:38:45.526397"], ["updated_at", "2018-10-01 09:38:45.526397"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.8ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 1], ["pokemon_id", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPoketeam::HABTM_Pokemons Create (0.5ms)[0m  [1m[32mINSERT INTO "pokemons_poketeams" ("poketeam_id", "pokemon_id") VALUES ($1, $2)[0m  [["poketeam_id", 1], ["pokemon_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPoketeam Load (0.5ms)[0m  [1m[34mSELECT  "poketeams".* FROM "poketeams" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/pokemons" for 127.0.0.1 at 2018-10-01 10:39:37 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/pokemons"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-01 10:39:50 +0100
+Processing by Api::V1::PokemonsController#index as HTML
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.7ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers]   [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.3ms)
+Completed 200 OK in 128ms (Views: 102.6ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:40:05 +0100
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+No serializer found for resource: #<User id: 1, username: "jo", password_digest: "$2a$10$SDwT60nLx7HlB2pEeX.W/eVQAMAa.HhaccoFD8e3lC2...", created_at: "2018-10-01 09:38:44", updated_at: "2018-10-01 09:38:44">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.32ms)
+Completed 200 OK in 37ms (Views: 25.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:43:41 +0100
+  
+SyntaxError (/Users/flatiron/Labs/PokemonCompare-ServerSide/app/controllers/api/v1/users_controller.rb:12: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/users_controller.rb:12: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:50:35 +0100
+  
+SyntaxError (/Users/flatiron/Labs/PokemonCompare-ServerSide/config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        post '/login', to 'auth#create'
+                           ^):
+  
+config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:51:15 +0100
+  
+NameError (undefined local variable or method `create' for #<ActionDispatch::Routing::Mapper:0x007fe636557ed0>):
+  
+config/routes.rb:4:in `block (3 levels) in <main>'
+config/routes.rb:3:in `block (2 levels) in <main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:52:29 +0100
+  
+NameError (undefined local variable or method `create' for #<ActionDispatch::Routing::Mapper:0x007fe6367cd1d8>):
+  
+config/routes.rb:4:in `block (3 levels) in <main>'
+config/routes.rb:3:in `block (2 levels) in <main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:55:12 +0100
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 22ms (Views: 7.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/v1/users/login" for 127.0.0.1 at 2018-10-01 10:55:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/login"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-10-01 10:55:46 +0100
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-10-01 11:00:08 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/users"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/v1/register" for 127.0.0.1 at 2018-10-01 11:02:00 +0100
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"guy", "password"=>"[FILTERED]"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "guy"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:8
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "guy"], ["password_digest", "$2a$10$mJaaxKw3lhaaPHjqeYmn7O2/AjvHPrvputoo/GguX49adSauMBpjq"], ["created_at", "2018-10-01 10:02:00.736376"], ["updated_at", "2018-10-01 10:02:00.736376"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "guy"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 201 Created in 100ms (Views: 7.1ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/api/v1/register" for 127.0.0.1 at 2018-10-01 11:14:39 +0100
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"dude", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "dude"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "dude"], ["password_digest", "$2a$10$9rDMeyzQMIBPtxXhX7DusOappt8wrKanZfLEeE/mqwUTW87K0lWra"], ["created_at", "2018-10-01 10:14:39.673114"], ["updated_at", "2018-10-01 10:14:39.673114"]]
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "dude"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:11
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 201 Created in 108ms (Views: 6.0ms | ActiveRecord: 13.5ms)
+
+
+Started POST "/poketeams/new" for 127.0.0.1 at 2018-10-01 11:20:17 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/poketeams/new"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-01 11:21:14 +0100
+Processing by Api::V1::PoketeamsController#create as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:23:01 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/auth_controller.rb:20:in `user_login_params'
+app/controllers/api/v1/auth_controller.rb:5:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:24:23 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 500 Internal Server Error in 126226ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/auth_controller.rb:6:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:26:35 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 500 Internal Server Error in 20224ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/auth_controller.rb:6:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:26:59 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.35ms)
+Completed 401 Unauthorized in 171ms (Views: 85.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:27:20 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.45ms)
+Completed 401 Unauthorized in 57ms (Views: 15.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:27:42 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 500 Internal Server Error in 117212ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/auth_controller.rb:6:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:29:48 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 7.8ms)
+
+
+  
+NoMethodError (undefined method `empty' for <ActionController::Parameters {} permitted: true>:ActionController::Parameters
+Did you mean?  empty?):
+  
+app/controllers/api/v1/auth_controller.rb:11:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:29:57 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.87ms)
+Completed 200 OK in 186ms (Views: 76.6ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:30:45 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.55ms)
+Completed 200 OK in 203ms (Views: 80.8ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/v1/register" for 127.0.0.1 at 2018-10-01 11:31:30 +0100
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"fourthguy", "password"=>"[FILTERED]"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "fourthguy"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "fourthguy"], ["password_digest", "$2a$10$yLuVSYGwiyX4fF3G5RiR4O1M2Hz8.E3rY7g9mVGy05MPhcZ6jmpSK"], ["created_at", "2018-10-01 10:31:31.726308"], ["updated_at", "2018-10-01 10:31:31.726308"]]
+  ↳ app/controllers/api/v1/users_controller.rb:10
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10
+Completed 500 Internal Server Error in 29637ms (ActiveRecord: 18.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/users_controller.rb:12:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:33:22 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/api/v1/auth_controller.rb:23:in `user_login_params'
+app/controllers/api/v1/auth_controller.rb:5:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:35:05 +0100
+Processing by Api::V1::AuthController#create as */*
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-01 11:37:42 +0100
+Completed 500 Internal Server Error in 155794ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/auth_controller.rb:6:in `create'
+Processing by Api::V1::PoketeamsController#create as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.69ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 138ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-01 11:37:49 +0100
+Processing by Api::V1::PoketeamsController#create as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.88ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 80ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-01 11:38:54 +0100
+  
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  
+app/controllers/api/v1/poketeams_controller.rb:1:in `<main>'
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-01 11:39:17 +0100
+Processing by Api::V1::PoketeamsController#create as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.91ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 80ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:39:24 +0100
+Processing by Api::V1::AuthController#create as */*
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/api/v1/auth_controller.rb:23:in `user_login_params'
+app/controllers/api/v1/auth_controller.rb:5:in `create'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:39:58 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.62ms)
+Completed 200 OK in 215ms (Views: 88.2ms | ActiveRecord: 13.4ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:44:35 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.9ms)
+Completed 200 OK in 62ms (Views: 11.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:44:58 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.64ms)
+Completed 200 OK in 58ms (Views: 9.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 11:48:39 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.59ms)
+Completed 200 OK in 78ms (Views: 26.7ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 12:47:47 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.0ms)
+Completed 200 OK in 37ms (Views: 9.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-01 12:48:02 +0100
+Processing by Api::V1::AuthController#create as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.03ms)
+Completed 200 OK in 42ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+

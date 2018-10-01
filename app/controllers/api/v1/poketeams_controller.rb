@@ -1,4 +1,4 @@
-class PoketeamsController < ApplicationController
+class Api::V1::PoketeamsController < ApplicationController
 
     def index
         @poketeams = Poketeam.all
