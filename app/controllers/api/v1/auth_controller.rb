@@ -8,9 +8,6 @@ class Api::V1::AuthController < ApplicationController
         # encode token comes from ApplicationController
         token = encode_token({ user_id: @user.id })
         render json: { user: UserSerializer.new(@user), jwt: token }, status: :accepted
-      elsif user_login_params.empty?
-        render json: { message: 'user params is empty',
-                       params: params }
       else
         render json: { message: 'Invalid username or password' }, status: :unauthorized
       end
@@ -20,7 +17,7 @@ class Api::V1::AuthController < ApplicationController
    
     def user_login_params
       # params { user: {username: 'Chandler Bing', password: 'hi' } }
-      params.permit(:username, :password)
+      params.require(:user).permit(:username, :password)
     end
     
 end

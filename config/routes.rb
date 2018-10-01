@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      post '/register', to: 'users#create'
       get '/users', to: 'users#index'
+      get '/validate', to: 'users#validate'
+      post '/register', to: 'users#create'
       post '/login', to: 'auth#create'
       
       get '/pokemons', to: 'pokemons#index'

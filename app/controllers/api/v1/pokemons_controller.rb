@@ -1,30 +1,35 @@
 class Api::V1::PokemonsController < ApplicationController
 
     def index
-        @pokemons = Pokemon.all
-        render json: @pokemons      
+        user = current_user
+        pokemons = user.pokemons
+        if user
+            render json: pokemons 
+        else 
+            render json: {error: 'Not a valid user.'} , status: 400
+        end
     end
 
 
     def create
         pokeData = Pokemon.get_pokemon(params["name"])
-        @pokemon = Pokemon.new(pokemon_params)
-        @pokemon.averagepokemonstats = pokeData
-        if @pokemon.save
-            render json: @pokemon, status: :accepted
+        pokemon = Pokemon.new(pokemon_params, user_id: current_user.id)
+        pokemon.averagepokemonstats = pokeData
+        if pokemon.save
+            render json: pokemon, status: :accepted
         else 
-            render json: {errors: @pokemon.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: pokemon.errors.full_messages}, status: :unprocessible_entity
         end
     end
 
 
     def update
-        @pokemon = Pokemon.find(params["id"])
-        @pokemon.update(pokemon_params)
-        if @pokemon.save
-            render json: @pokemon, status: :accepted
+        pokemon = Pokemon.find(params["id"])
+        pokemon.update(pokemon_params)
+        if pokemon.save
+            render json: pokemon, status: :accepted
         else 
-            render json: {errors: @pokemon.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: pokemon.errors.full_messages}, status: :unprocessible_entity
         end
     end
 

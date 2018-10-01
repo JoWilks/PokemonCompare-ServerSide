@@ -16,6 +16,16 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
+
+    def validate
+        user = current_user
+        if user
+            render json: {id: user.id, username: user.username}
+        else
+            render json: {error: 'Validation failed.', status: 400}
+        end
+    end
+
     private
     def user_params
         params.require(:user).permit(:username, :password)
