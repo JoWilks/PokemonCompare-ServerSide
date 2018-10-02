@@ -18,7 +18,7 @@ class Pokemon < ApplicationRecord
                 pokemon_obj[key] = value
             end
         }
-        pokemon_obj
+        pokemon_obj.to_json
     end
 
     # def add_avestats(name)
