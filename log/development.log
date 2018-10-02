@@ -8610,3 +8610,90 @@ Processing by Api::V1::PokemonsController#index as */*
 Completed 200 OK in 26ms (Views: 9.0ms | ActiveRecord: 13.9ms)
 
 
+Started POST "/api/v1/pokemons/new" for 127.0.0.1 at 2018-10-02 14:59:46 +0100
+Processing by Api::V1::PokemonsController#create as */*
+  Parameters: {"name"=>"bulbasaur", "nickname"=>"Bulby", "level"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "level", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nickname", "Bulby"], ["name", "bulbasaur"], ["level", 50], ["averagepokemonstats", "{\"abilities\":[{\"ability\":{\"name\":\"chlorophyll\",\"url\":\"https://pokeapi.co/api/v2/ability/34/\"},\"is_hidden\":true,\"slot\":3},{\"ability\":{\"name\":\"overgrow\",\"url\":\"https://pokeapi.co/api/v2/ability/65/\"},\"is_hidden\":false,\"slot\":1}],\"base_experience\":64,\"id\":1,\"name\":\"bulbasaur\",\"species\":{\"name\":\"bulbasaur\",\"url\":\"https://pokeapi.co/api/v2/pokemon-species/1/\"},\"sprites\":{\"back_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png\",\"back_female\":null,\"back_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png\",\"back_shiny_female\":null,\"front_default\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\",\"front_female\":null,\"front_shiny\":\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png\",\"front_shiny_female\":null},\"stats\":[{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"speed\",\"url\":\"https://pokeapi.co/api/v2/stat/6/\"}},{\"base_stat\":65,\"effort\":0,\"stat\":{\"name\":\"special-defense\",\"url\":\"https://pokeapi.co/api/v2/stat/5/\"}},{\"base_stat\":65,\"effort\":1,\"stat\":{\"name\":\"special-attack\",\"url\":\"https://pokeapi.co/api/v2/stat/4/\"}},{\"base_stat\":49,\"effort\":0,\"stat\":{\"name\":\"defense\",\"url\":\"https://pokeapi.co/api/v2/stat/3/\"}},{\"base_stat\":49,\"effort\":0,\"stat\":{\"name\":\"attack\",\"url\":\"https://pokeapi.co/api/v2/stat/2/\"}},{\"base_stat\":45,\"effort\":0,\"stat\":{\"name\":\"hp\",\"url\":\"https://pokeapi.co/api/v2/stat/1/\"}}],\"types\":[{\"slot\":2,\"type\":{\"name\":\"poison\",\"url\":\"https://pokeapi.co/api/v2/type/4/\"}},{\"slot\":1,\"type\":{\"name\":\"grass\",\"url\":\"https://pokeapi.co/api/v2/type/12/\"}}]}"], ["user_id", 9], ["created_at", "2018-10-02 13:59:47.053205"], ["updated_at", "2018-10-02 13:59:47.053205"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers]   [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:21
+[active_model_serializers] Rendered PokemonSerializer with ActiveModelSerializers::Adapter::Attributes (13.65ms)
+Completed 202 Accepted in 536ms (Views: 13.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/api/v1/validate" for 127.0.0.1 at 2018-10-02 14:59:55 +0100
+Processing by Api::V1::UsersController#validate as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-02 14:59:55 +0100
+Processing by Api::V1::PokemonsController#index as */*
+  Parameters: {"pokemon"=>{}}
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers]   [1m[36mPoketeam Load (9.9ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers]   [1m[36mPoketeam Load (1.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.45ms)
+Completed 200 OK in 56ms (Views: 23.3ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/api/v1/validate" for 127.0.0.1 at 2018-10-02 15:28:23 +0100
+Processing by Api::V1::UsersController#validate as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-02 15:28:23 +0100
+Processing by Api::V1::PokemonsController#index as */*
+  Parameters: {"pokemon"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers]   [1m[36mPoketeam Load (2.0ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers]   [1m[36mPoketeam Load (0.9ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.15ms)
+Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 4.5ms)
+
+
