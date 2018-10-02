@@ -1,4 +1,5 @@
 class Api::V1::PokemonsController < ApplicationController
+    skip_before_action :authorized, only: [:search]
 
     def index
         user = current_user
@@ -13,7 +14,8 @@ class Api::V1::PokemonsController < ApplicationController
 
     def create
         pokeData = Pokemon.get_pokemon(params["name"])
-        pokemon = Pokemon.new(pokemon_params, user_id: current_user.id)
+        pokemon = Pokemon.new(pokemon_params)
+        pokemon.user_id = current_user.id
         pokemon.averagepokemonstats = pokeData
         if pokemon.save
             render json: pokemon, status: :accepted
@@ -52,7 +54,7 @@ class Api::V1::PokemonsController < ApplicationController
     private
 
   def pokemon_params
-    params.permit(:nickname, :name, :nature, :level, :attack, :special_attack, :defence, :special_defence, :speed, :hp, :user_id)
+    params.permit(:nickname, :name, :nature, :level, :attack, :special_attack, :defence, :special_defence, :speed, :hp)
   end
 
 

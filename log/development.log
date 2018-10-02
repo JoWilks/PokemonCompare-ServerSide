@@ -7045,3 +7045,306 @@ Processing by Api::V1::UsersController#validate as JSON
 Completed 200 OK in 211ms (Views: 86.8ms | ActiveRecord: 16.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-02 08:42:48 +0100
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (7.9ms)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-10-02 08:42:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/v1/login" for 127.0.0.1 at 2018-10-02 08:43:33 +0100
+Processing by Api::V1::AuthController#create as JSON
+  Parameters: {"user"=>{"username"=>"test", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"test", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.57ms)
+Completed 202 Accepted in 171ms (Views: 25.0ms | ActiveRecord: 42.2ms)
+
+
+Started GET "/api/v1/validate" for 127.0.0.1 at 2018-10-02 08:44:12 +0100
+Processing by Api::V1::UsersController#validate as */*
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 30ms (Views: 2.1ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 08:51:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pokemons/search"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:16:30 +0100
+Processing by Api::V1::PokemonsController#search as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.73ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:17:15 +0100
+Processing by Api::V1::PokemonsController#search as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 536ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:17:24 +0100
+Processing by Api::V1::PokemonsController#search as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 358ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:18:42 +0100
+Processing by Api::V1::PokemonsController#search as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 200 OK in 372ms (Views: 24.9ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:18:47 +0100
+Processing by Api::V1::PokemonsController#search as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 329ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:19:33 +0100
+Processing by Api::V1::PokemonsController#search as */*
+  Parameters: {"input"=>"beedrill"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 360ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:19:41 +0100
+Processing by Api::V1::PokemonsController#search as */*
+  Parameters: {"input"=>"beedrill"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.62ms)
+Completed 200 OK in 374ms (Views: 15.5ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/v1/pokemons/search" for 127.0.0.1 at 2018-10-02 09:19:46 +0100
+Processing by Api::V1::PokemonsController#search as */*
+  Parameters: {"input"=>"beedrill"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 344ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-02 09:23:07 +0100
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mPokemon Load (23.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 62ms (Views: 11.1ms | ActiveRecord: 25.1ms)
+
+
+  [1m[36mPokemon Load (2.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPokemon Load (2.2ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-02 09:24:26 +0100
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPokemon Update (20.1ms)[0m  [1m[33mUPDATE "pokemons" SET "user_id" = $1, "updated_at" = $2 WHERE "pokemons"."id" = $3[0m  [["user_id", 9], ["updated_at", "2018-10-02 08:24:34.939139"], ["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/pokemons" for 127.0.0.1 at 2018-10-02 09:24:38 +0100
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers]   [1m[36mPoketeam Load (25.3ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (72.68ms)
+Completed 200 OK in 150ms (Views: 113.2ms | ActiveRecord: 33.0ms)
+
+
+Started POST "/api/v1/pokemons/new" for 127.0.0.1 at 2018-10-02 09:26:25 +0100
+Processing by Api::V1::PokemonsController#create as */*
+  Parameters: {"name"=>"beedrill", "nickname"=>"Buzzy", "level"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+Completed 500 Internal Server Error in 598ms (ActiveRecord: 3.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/api/v1/pokemons_controller.rb:17:in `create'
+Started POST "/api/v1/pokemons/new" for 127.0.0.1 at 2018-10-02 09:27:22 +0100
+Processing by Api::V1::PokemonsController#create as */*
+  Parameters: {"name"=>"beedrill", "nickname"=>"Buzzy", "level"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 3.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/api/v1/pokemons_controller.rb:18:in `create'
+Started POST "/api/v1/pokemons/new" for 127.0.0.1 at 2018-10-02 09:27:54 +0100
+Processing by Api::V1::PokemonsController#create as */*
+  Parameters: {"name"=>"beedrill", "nickname"=>"Buzzy", "level"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mPokemon Create (4.5ms)[0m  [1m[32mINSERT INTO "pokemons" ("nickname", "name", "level", "averagepokemonstats", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nickname", "Buzzy"], ["name", "beedrill"], ["level", 50], ["averagepokemonstats", "{\"abilities\"=>[{\"ability\"=>{\"name\"=>\"sniper\", \"url\"=>\"https://pokeapi.co/api/v2/ability/97/\"}, \"is_hidden\"=>true, \"slot\"=>3}, {\"ability\"=>{\"name\"=>\"swarm\", \"url\"=>\"https://pokeapi.co/api/v2/ability/68/\"}, \"is_hidden\"=>false, \"slot\"=>1}], \"base_experience\"=>178, \"id\"=>15, \"name\"=>\"beedrill\", \"species\"=>{\"name\"=>\"beedrill\", \"url\"=>\"https://pokeapi.co/api/v2/pokemon-species/15/\"}, \"sprites\"=>{\"back_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png\", \"back_female\"=>nil, \"back_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/15.png\", \"back_shiny_female\"=>nil, \"front_default\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png\", \"front_female\"=>nil, \"front_shiny\"=>\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png\", \"front_shiny_female\"=>nil}, \"stats\"=>[{\"base_stat\"=>75, \"effort\"=>0, \"stat\"=>{\"name\"=>\"speed\", \"url\"=>\"https://pokeapi.co/api/v2/stat/6/\"}}, {\"base_stat\"=>80, \"effort\"=>1, \"stat\"=>{\"name\"=>\"special-defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/5/\"}}, {\"base_stat\"=>45, \"effort\"=>0, \"stat\"=>{\"name\"=>\"special-attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/4/\"}}, {\"base_stat\"=>40, \"effort\"=>0, \"stat\"=>{\"name\"=>\"defense\", \"url\"=>\"https://pokeapi.co/api/v2/stat/3/\"}}, {\"base_stat\"=>90, \"effort\"=>2, \"stat\"=>{\"name\"=>\"attack\", \"url\"=>\"https://pokeapi.co/api/v2/stat/2/\"}}, {\"base_stat\"=>65, \"effort\"=>0, \"stat\"=>{\"name\"=>\"hp\", \"url\"=>\"https://pokeapi.co/api/v2/stat/1/\"}}], \"types\"=>[{\"slot\"=>2, \"type\"=>{\"name\"=>\"poison\", \"url\"=>\"https://pokeapi.co/api/v2/type/4/\"}}, {\"slot\"=>1, \"type\"=>{\"name\"=>\"bug\", \"url\"=>\"https://pokeapi.co/api/v2/type/7/\"}}]}"], ["user_id", 9], ["created_at", "2018-10-02 08:27:54.594146"], ["updated_at", "2018-10-02 08:27:54.594146"]]
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers]   [1m[36mPoketeam Load (0.4ms)[0m  [1m[34mSELECT "poketeams".* FROM "poketeams" INNER JOIN "pokemons_poketeams" ON "poketeams"."id" = "pokemons_poketeams"."poketeam_id" WHERE "pokemons_poketeams"."pokemon_id" = $1[0m  [["pokemon_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/pokemons_controller.rb:21
+[active_model_serializers] Rendered PokemonSerializer with ActiveModelSerializers::Adapter::Attributes (11.3ms)
+Completed 202 Accepted in 393ms (Views: 11.6ms | ActiveRecord: 15.2ms)
+
+
+Started POST "/api/v1/poketeams/new" for 127.0.0.1 at 2018-10-02 09:30:10 +0100
+Processing by Api::V1::PoketeamsController#create as */*
+  Parameters: {"name"=>"Buzzy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/poketeams_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/poketeams_controller.rb:11
+  [1m[36mPoketeam Create (1.9ms)[0m  [1m[32mINSERT INTO "poketeams" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Buzzy"], ["user_id", 9], ["created_at", "2018-10-02 08:30:10.448717"], ["updated_at", "2018-10-02 08:30:10.448717"]]
+  ↳ app/controllers/api/v1/poketeams_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/poketeams_controller.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29
+[active_model_serializers]   [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemons_poketeams" ON "pokemons"."id" = "pokemons_poketeams"."pokemon_id" WHERE "pokemons_poketeams"."poketeam_id" = $1[0m  [["poketeam_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/poketeams_controller.rb:12
+[active_model_serializers] Rendered PoketeamSerializer with ActiveModelSerializers::Adapter::Attributes (17.7ms)
+Completed 202 Accepted in 59ms (Views: 16.3ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-02 10:04:21 +0100
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2018-10-02 10:04:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/pokemons"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
