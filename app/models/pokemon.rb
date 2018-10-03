@@ -1,4 +1,6 @@
 class Pokemon < ApplicationRecord
+    validates :name, :nickname, :nature, :level, :attack, :special_attack, :defence, :special_defence, :speed, :hp
+
     belongs_to :user
     has_and_belongs_to_many :poketeams
 
