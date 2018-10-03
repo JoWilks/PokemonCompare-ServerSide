@@ -19,8 +19,8 @@ class Api::V1::PoketeamsController < ApplicationController
     def update
         poketeam = Poketeam.find(params["id"])
         poketeam.update(poketeam_params)
-        
         pokemons = Pokemon.find_all(params["pokemon_ids"])
+        poketeam.user_id = current_user.id
         poketeam.pokemons = pokemons
         
         if poketeam.save

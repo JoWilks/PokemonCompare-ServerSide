@@ -37,7 +37,6 @@ class Pokemon < ApplicationRecord
 
 
     def self.find_all(array)
-        modarr = array.first.split(',').map{|id| id.to_i}
         Pokemon.select{ |pokemon|
             array.include?(pokemon.id)
         }
