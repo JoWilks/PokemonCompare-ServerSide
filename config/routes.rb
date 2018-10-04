@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       
       get '/poketeams', to: 'poketeams#index'
       post '/poketeams/new', to: 'poketeams#create'
+      get '/poketeams/:id', to: 'poketeams#show'
       patch '/poketeams/:id', to: 'poketeams#update'
       delete '/poketeams/:id', to: 'poketeams#delete'
     end

@@ -39,9 +39,11 @@ class Pokemon < ApplicationRecord
 
 
     def self.find_all(array)
-        Pokemon.select{ |pokemon|
-            array.include?(pokemon.id)
-        }
+        # if array.empty?
+        #     return array
+        # else
+        Pokemon.select{ |pokemon| array.include?(pokemon.id)}
+        # end
     end
 
     

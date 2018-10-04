@@ -3,7 +3,7 @@ class User < ApplicationRecord
     validates :username, uniqueness: { case_sensitive: false }
 
     has_many :pokemons
-    has_many :poke_teams
+    has_many :poketeams
     
 end
 

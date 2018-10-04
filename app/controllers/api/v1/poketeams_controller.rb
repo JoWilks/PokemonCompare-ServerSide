@@ -1,10 +1,20 @@
 class Api::V1::PoketeamsController < ApplicationController
 
     def index
-        poketeams = Poketeam.all
-        render json: poketeams      
+        user = current_user
+        poketeams = user.poketeams
+        if user
+            render json: poketeams 
+        else 
+            render json: {error: 'Not a valid user.'} , status: 400
+        end
     end
 
+    def show
+        poketeam = Poketeam.find(params["id"])
+        render json: poketeam
+    end
+    
     def create
         poketeam = Poketeam.new(poketeam_params)
         poketeam.user_id = current_user.id
@@ -19,7 +29,7 @@ class Api::V1::PoketeamsController < ApplicationController
     def update
         poketeam = Poketeam.find(params["id"])
         poketeam.update(poketeam_params)
-        pokemons = Pokemon.find_all(params["pokemon_ids"])
+        pokemons = Pokemon.find_all(params["pokemonIds"])
         poketeam.user_id = current_user.id
         poketeam.pokemons = pokemons
         
